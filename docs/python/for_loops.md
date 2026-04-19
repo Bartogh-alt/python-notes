@@ -1,24 +1,15 @@
-\# For loops
+# For loops
 
-
-
-\## Forklaringen
+## Forklaringen
 
 En loop der itererer over en sekvens.
 
-
-
-\## Eksempel
-
+## Eksempel
 ```python
-
 for i in range(5):
-
 print(i)
+```
 
+## Relateret
 
-
-\## Relateret
-
-* \[\[while\_loop]]
-
+* [[while_loop]]
