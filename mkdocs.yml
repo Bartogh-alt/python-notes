@@ -2,6 +2,40 @@ site_name: Python Knowledge Base
 
 theme:
   name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+
+  palette:
+
+    # Light mode
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Skift til dark mode
+
+    # Dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/wheather-sunny
+        name: Skift til light mode
+
+nav:
+  - Home: index.md
+  - Python Basics:
+      - Variabler: basics/variables.md
+      - Loops: basics/loops.md
+  - Advanced:
+      - OOP: advanced/oop.md
 
 plugins:
   - search
@@ -11,4 +45,11 @@ markdown_extensions:
   - toc:
       permalink: true
   - admonition
+  - pymdownx.details
+  - pymdownx.superfences
   - codehilite
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/Bartogh-alt/python-notes
